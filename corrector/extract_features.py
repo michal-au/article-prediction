@@ -35,12 +35,6 @@ def np_selector(n):
     return all(['POS' in [chch.get_label() for chch in np_child.children] for np_child in np_children])
 
 
-# TMP - smazat
-def _save_data_frame(data_frame, f_name):
-    pickle_path = os.path.join('code', 'corrector', f_name + '.pkl')
-    data_frame.to_pickle(pickle_path)
-
-
 def extract_features(trees, bnc=False):
     feature_collection = []
     history = deque([None] * 5)
@@ -62,15 +56,11 @@ def extract_features(trees, bnc=False):
             history = _add_to_history(history, t)
 
     df = pd.DataFrame(feature_collection)
-    _save_data_frame(df, 'tmp_bnc_dataframe')
-    df = None
     test_x = postprocess_features(df, bnc=bnc)
     return test_x
 
 
 def postprocess_features(df, bnc=False):
-    # TODO: smazat
-    df = pd.read_pickle(os.path.join('code', 'corrector', 'tmp_bnc_dataframe.pkl'))
     ready_features = {}
 
     features_to_drop = [f for f in df.columns if f not in ALL_FEATURE_SETS]

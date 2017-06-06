@@ -5,8 +5,6 @@ from collections import deque
 from gensim.models import word2vec
 import cPickle
 
-from ..lib.Tree import Tree
-from ..lib.wordnet import lemmatize
 from ..lib import utils
 from ..lib.sentence import SentenceStateTracker
 from ..lib.language_model.utils.sentence_preprocess import preprocess_sent_for_zero_lc_nb, preprocess_sent_for_lc_nb
@@ -23,7 +21,6 @@ from .additional_methods.others import (
     smoothed_parent,
 )
 from .additional_methods.predicate import (
-    main_verb_form,
     subject_verb_form,
     subject_position,
     object_verb_form,
@@ -37,7 +34,7 @@ from .additional_methods.np_modification import (
     postmodification_pp_of,
 )
 from countability.countability import countability, referent_with_countability
-from embeddings.embeddings import head_form_embeddings, embed_feature_selection  # embed_poly, object_form_embeddings, avg_embeddings
+from embeddings.embeddings import head_form_embeddings
 
 from language_model.kenlm import score_by_kenlm
 
@@ -54,16 +51,8 @@ DECISION_LISTS_BNC = cPickle.load(open(os.path.join(SETTINGS.get('paths', 'dataC
 print "reading embeddings"
 EMBEDDINGS = word2vec.Word2Vec.load_word2vec_format(SETTINGS.get('paths', 'dataEmbeddingsGoogle'), binary=True)
 
-#INDICIES_F = cPickle.load(open(os.path.join(SETTINGS.get('paths', 'dataEmbeddingsIndicies'), 'indicies_f_crossvalid.pkl'), 'rb'))
-#INDICIES_F = sorted(INDICIES_F, key=lambda x: INDICIES_F[x], reverse=True)[:300]
-#INDICIES_MI = cPickle.load(open(os.path.join(SETTINGS.get('paths', 'dataEmbeddingsIndicies'), 'indicies_mi.pkl'), 'rb'))
-
-
 # LANGUAGE MODELS:
 print "reading language models"
-#model_kenlm_ptb_10_lc_nbs_zeros = kenlm.Model(os.path.join(SETTINGS.get('paths', 'modelLM'), 'kenlm-ptb-10-lc-nbs-zeros'))
-#model_kenlm_ggl_10_lc_nbs_zeros = kenlm.Model(os.path.join(SETTINGS.get('paths', 'modelLM'), 'kenlm-ggl-10-lc-nbs-zeros'))
-#model_kenlm_ptb_5_lc_nbs = kenlm.Model(os.path.join(SETTINGS.get('paths', 'modelLM'), 'kenlm-ptb-5-lc-nbs'))
 model_kenlm_ggl_5_nbs = kenlm.Model(os.path.join(SETTINGS.get('paths', 'modelLM'), 'kenlm-ggl-5-nbs-cls3'))
 
 
@@ -115,7 +104,6 @@ def populate_feature_dict(bnp, history, context_words, article_length, node_nb, 
         'b_postmodification_pp_of': postmodification_pp_of(bnp),
         'b_non_article_det_extended': non_article_dets_zero_marker(bnp),
         'b_relative_position': relative_position_within_sent(bnp),
-        #'b_predicate_form': main_verb_form(bnp),
         'b_referent': extended_referent(h_form, bnp, history),
         'b_referent_with_propers': extended_referent_with_propers(h_form, bnp, history),
         'b_subject_verb_form': subject_verb_form(bnp),
@@ -124,27 +112,10 @@ def populate_feature_dict(bnp, history, context_words, article_length, node_nb, 
         'b_object_form': object_verb_form(bnp),
         'b_pp_object_form': pp_object_form(bnp),
         'b_position_within_article': node_nb/float(article_length),
-        #'c_countability': countability(bnp, DECISION_LISTS, context_words),
         'c_countability_bnc': countability(bnp, DECISION_LISTS_BNC, context_words),
-        #'c_referent_with_countability': referent_with_countability(bnp, DECISION_LISTS_BNC, context_words, extended_referent(h_form, bnp, history)),
-        #'c_referent_with_countability_with_propers': referent_with_countability(bnp, DECISION_LISTS_BNC, context_words, extended_referent_with_propers(h_form, bnp, history)),
         'd_head_form_embeddings': head_form_embeddings(EMBEDDINGS, h_form),
-        #'d_head_form_embeddings_selection_f': embed_feature_selection(EMBEDDINGS, h_form, INDICIES_F),
-        #'d_head_form_embeddings_selection_mi': embed_feature_selection(EMBEDDINGS, h_form, INDICIES_MI),
-        #'d_object_form_embeddings': object_form_embeddings(EMBEDDINGS, bnp),
-        #'d_words_before_head_embeddings': avg_embeddings(EMBEDDINGS, _words_before_head),
-        #'d_words_after_head_embeddings': avg_embeddings(EMBEDDINGS, _words_after_head),
-        #'d_words_before_np_embeddings': avg_embeddings(EMBEDDINGS, _words_before_np),
-        #'d_words_after_np_embeddings': avg_embeddings(EMBEDDINGS, _words_after_np),
-        #'e_kenlm_ptb_10_lc_nbs_zeros': score_by_kenlm(model_kenlm_ptb_10_lc_nbs_zeros, bnp, lms_sentence['ptb-10-lc-nbs-zeros'], prob=True),
-        #'e_kenlm_ggl_10_lc_nbs_zeros': score_by_kenlm(model_kenlm_ggl_10_lc_nbs_zeros, bnp, lms_sentence['ggl-10-lc-nbs-zeros'], prob=True),
-        #'e_kenlm_ptb_5_lc_nbs': score_by_kenlm(model_kenlm_ptb_5_lc_nbs, bnp, lms_sentence['ptb-5-lc-nbs'], prob=False),
         'e_kenlm_ggl_5_lc_nbs': score_by_kenlm(model_kenlm_ggl_5_nbs, bnp, lms_sentence['ggl-5-lc-nbs'], prob=False),
     })
-    #print "pred vals", feature_dict['e-kenlm-ptb-10-lc-nbs-zeros']
-    #print "pred vals", feature_dict['e-kenlm-ggl-10-lc-nbs-zeros']
-    #print "pred vals", feature_dict['e-kenlm-ptb-5-lc-nbs']
-    #print "pred vals", feature_dict['e-kenlm-ggl-5-lc-nbs']
     return feature_dict
 
 

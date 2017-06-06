@@ -18,10 +18,8 @@ move-orig-parses:
 	@cd parse && echo "changing directory to parse" && \
 	make move-orig-parses
 
-extract-sentences-for-lm:
-	@cd ../.. && \
-	python -m code.data_preparation.extract_sentences_for_rnnlm
 
+# for language model feature
 preprocess-billion-benchmark:
 	@cd ../.. && \
-	python -m code.data_preparation.billion-benchmark.preprocess data/billion_word_benchmark/orig/*
+	python -m code.data_preparation.billion-benchmark.preproces_sentence data/billion_word_benchmark/orig/*

@@ -1,5 +1,5 @@
 """
-Runs model training and evaluation based on an imput file
+Runs model training and evaluation based on an input file
 
 file format:
 each lines represents a single train-test run and should have the same format as experiment results, eg:
@@ -36,16 +36,6 @@ if __name__ == '__main__':
         print("{0:0.2f}".format(idx / float(l)))
         print("---------------------------------------------------------------------------")
 
-        # _, _, _, model_call, features, train_df_path, test_df_path, _ = line
-        # features = abbrevs_to_feature_names([abb for abb in features.split()])
-        # train_model(
-        #     features,
-        #     model_call,
-        #     train_df_path,
-        #     test_df_path,
-        #     only_console=False,
-        #     cross_validation=False
-        # )
         _, _, _, model_call, features, train_dataset_name, test_dataset_name, _ = line
         features = abbrevs_to_feature_names([abb for abb in features.split()])
         train_model(
