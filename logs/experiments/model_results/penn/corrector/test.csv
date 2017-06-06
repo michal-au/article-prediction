@@ -1,0 +1,10 @@
+file, errors, corrects, swaps, insertions, deletions
+solution_LOGREG.txt,3864,452,328,193,3343
+solution_XGB.txt,3903,232,185,12,3706
+solution_LM_50_05.txt,4112,19,8,8,4096
+solution_LM_0_0.txt,12278,2272,1800,10427,51
+file, errors, corrects, swaps, insertions, deletions
+solution_LOGREG.txt, 3864, 452, 328, 193, 3343
+solution_XGB.txt, 3903, 232, 185, 12, 3706
+solution_LM_50_05.txt, 4106, 25, 2, 8, 4096
+solution_LM_0_0.txt, 11210, 3340, 732, 10427, 51

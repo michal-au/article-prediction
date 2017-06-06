@@ -1,0 +1,3 @@
+accuracy,accuracy-train,model,call,features,train data,test data,time
+0.90081128747795414,0.92499087757708442,LogisticRegression,"LogisticRegression(penalty='l1', solver='liblinear', C=1)",ah ahf ahn anad ap apah apbh awah awan awbh awbn bhp bhps bof bpahal bpbhal bpof bpt br bwahal bwanal bwbhal bwbnal ccb dhfe,data/features/penn/train.pkl,data/features/penn/test.pkl,2016-11-07 21:32:26
+0.89975308641975305,0.95763014656692813,LogisticRegression,"LogisticRegression(penalty='l2', solver='liblinear', C=1)",ah ahf ahn anad ap apah apbh awah awan awbh awbn bhp bhps bof bpahal bpbhal bpof bpt br bwahal bwanal bwbhal bwbnal ccb dhfe,data/features/penn/train.pkl,data/features/penn/test.pkl,2016-11-07 21:53:06

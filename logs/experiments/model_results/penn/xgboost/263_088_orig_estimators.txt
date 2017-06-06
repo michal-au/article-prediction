@@ -1,0 +1,3 @@
+{'base_score': 0.5, 'colsample_bylevel': 1, 'colsample_bytree': 0.9, 'gamma': 0.6, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 11, 'min_child_weight': 1, 'missing': None, 'n_estimators': 1531, 'nthread': 8, 'objective': 'multi:softprob', 'reg_alpha': 0, 'reg_lambda': 1, 'scale_pos_weight': 1, 'seed': 27, 'silent': True, 'subsample': 0.9}
+Accuracy (train): 0.9812
+Accuracy (heldout): 0.9170

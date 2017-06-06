@@ -1,0 +1,78 @@
+PROB 51291 -213.331 0 
+TOP -213.331 S -205.305 NP-A -0.00531652 NPB -0.00172718 PRP 0 I
+      VP -204.827 VBP 0 am
+         VP-A -199.893 VBN 0 convinced
+              SBAR-A -197.951 IN 0 that
+                     S-A -195.394 NP-A -91.1753 NPB -5.81842 DT 0 a
+                                  JJ 0 monetary
+                                  NN 0 policy
+                              PP -81.9394 IN 0 for
+                                 NP-A -74.7504 NPB -2.7903 DT 0 this
+                                          NN 0 country
+                                      SBAR-g -66.8258 WHNP -5.13674e-05 WDT 0 that
+                                             S-A-g -64.2291 TRACE T
+                                                   VP -63.8527 MD 0 would
+                                                      VP-A -57.1173 VB 0 return
+                                                           NP-A -3.20832 NPB -2.89633 NN 0 interest
+                                                                    NNS 0 rates
+                                                           PP -44.1892 TO 0 to
+                                                              NP-A -37.7074 NPB -11.8946 DT 0 the
+                                                                       JJ 0 historical
+                                                                       NN 0 level
+                                                                   PP -24.1675 IN 0 of
+                                                                      NP-A -19.5056 NP -5.91858 NPB -5.39949 CD 0 4
+                                                                                  NN 0 %
+                                                                           CC 0 or
+                                                                           NP -5.25048 NPB -4.73138 CD 0 5
+                                                                                  NN 0 %
+                         VP -97.0417 MD 0 would
+                            VP-A -94.4383 VB 0 have
+                                 NP-A -89.0341 CONJP -0.548562 RB 0 not
+                                            RB 0 only
+                                      NP -25.1549 NPB -7.85456 DT 0 an
+                                             JJ 0 immediate
+                                             NN 0 impact
+                                         PP -15.7457 IN 0 on
+                                            NP-A -3.16238 NPB -2.78331 NN 0 housing
+                                                     NNS 0 starts
+                                      NP -12.7346 NPB -12.501 DT 0 the
+                                             NN 0 housing
+                                             NN 0 stock
+                                      NP -19.7237 NPB -8.14702 PRP$ 0 our
+                                             NN 0 industry
+                                         PP -7.02139 IN 0 in
+                                            NP-A -0.869683 NPB -0.7198 NNP 0 America
+(TOP~am~1~1 (S~am~2~2 (NPB~I~1~1 ``/PUNC`` I/PRP ) (VP~am~2~1 am/VBP (VP-A~convinced~2~1 convinced/VBN (SBAR-A~that~2~1 that/IN (S-A~would~2~2 (NP-A~policy~2~1 (NPB~policy~3~3 a/DT monetary/JJ policy/NN ) (PP~for~2~1 for/IN (NP-A~country~2~1 (NPB~country~2~2 this/DT country/NN ) (SBAR-g~that~2~1 (WHNP~that~1~1 that/WDT ) (S-A-g~would~2~2 T/TRACE (VP~would~2~1 would/MD (VP-A~return~3~1 return/VB (NPB~rates~2~2 interest/NN rates/NNS ) (PP~to~2~1 to/TO (NP-A~level~2~1 (NPB~level~3~3 the/DT historical/JJ level/NN ) (PP~of~2~1 of/IN (NP-A~%~3~1 (NPB~%~2~2 4/CD %/NN ) or/CC (NPB~%~2~2 5/CD %/NN ) ) ) ) ) ) ) ) ) ) ) ) (VP~would~2~1 would/MD (VP-A~have~2~1 have/VB (NP-A~impact~4~2 (CONJP~only~2~2 not/RB only/RB ) (NP~impact~2~1 (NPB~impact~3~3 an/DT immediate/JJ impact/NN ) (PP~on~2~1 on/IN (NPB~starts~2~2 housing/NN starts/NNS ,/PUNC, ) ) ) (NPB~stock~3~3 the/DT housing/NN stock/NN ,/PUNC, ) (NP~industry~2~1 (NPB~industry~2~2 our/PRP$ industry/NN ) (PP~in~2~1 in/IN (NPB~America~1~1 America/NNP ,/PUNC, ) ) ) ) ) ) ) ) ) ) ) ) 
+TIME 2
+PROB 24253 -170.795 0 
+TOP -170.795 S -168.509 NP -26.6303 NPB -2.09808 DT 0 the
+             NN 0 refurbishing
+         PP -22.6028 IN 0 of
+            NP-A -15.9056 NPB -15.4827 PRP$ 0 our
+                     JJ 0 industrial
+                     NN 0 system
+      S-A -113.653 S -45.5726 NP-A -0.00528948 NPB -0.000436731 PRP 0 it
+            VP -43.0621 MD 0 would
+               VP-A -38.138 VB 0 help
+                    NP-A -14.9294 NPB -14.3703 DT 0 the
+                             NNP 0 Third
+                             NNP 0 World
+                             NNS 0 economies
+                    ADVP -0.13746 RB 0 considerably
+          CC 0 and
+          S -59.2422 NP-A -0.00528948 NPB -0.000436731 PRP 0 it
+            VP -56.7316 MD 0 would
+               ADVP -0.0771533 RB 0 particularly
+               VP-A -43.9182 VB 0 have
+                    NP-A -12.0217 NPB -10.9436 DT 0 a
+                             JJ 0 favorable
+                             NN 0 impact
+                    PP -17.2707 IN 0 upon
+                       NP-A -8.89495 NPB -8.49332 PRP$ 0 our
+                                NN 0 budget
+                                NN 0 deficit
+      NP-A -2.10771 NPB -1.94417 NNP 0 Mr.
+               NNP 0 Kemp
+      VP -1.18822 VBD 0 said
+(TOP~said~1~1 (S~said~4~4 (NP~refurbishing~2~1 (NPB~refurbishing~2~2 the/DT refurbishing/NN ) (PP~of~2~1 of/IN (NPB~system~3~3 our/PRP$ industrial/JJ system/NN ,/PUNC, ) ) ) (S-A~would~3~1 (S~would~2~2 (NPB~it~1~1 it/PRP ) (VP~would~2~1 would/MD (VP-A~help~3~1 help/VB (NPB~economies~4~4 the/DT Third/NNP World/NNP economies/NNS ) (ADVP~considerably~1~1 considerably/RB ) ) ) ) and/CC (S~would~2~2 (NPB~it~1~1 it/PRP ) (VP~would~3~1 would/MD (ADVP~particularly~1~1 particularly/RB ) (VP-A~have~3~1 have/VB (NPB~impact~3~3 a/DT favorable/JJ impact/NN ) (PP~upon~2~1 upon/IN (NPB~deficit~3~3 our/PRP$ budget/NN deficit/NN ,/PUNC, ''/PUNC'' ) ) ) ) ) ) (NPB~Kemp~2~2 Mr./NNP Kemp/NNP ) (VP~said~1~1 said/VBD ./PUNC. ) ) ) 
+TIME 0

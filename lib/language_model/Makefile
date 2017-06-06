@@ -1,0 +1,2 @@
+unittests:
+	py.test tests

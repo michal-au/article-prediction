@@ -1,0 +1,6 @@
+.ropeproject/**
+.ipynb_checkpoints/**
+*.pyc
+.idea/**
+lib/stanford-parser-full-2015-12-09/**
+lib/stanford-english-corenlp-2016-01-10-models.jar

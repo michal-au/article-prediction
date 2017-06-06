@@ -1,0 +1,3 @@
+﻿Accuracy (train): 0.9279
+Accuracy (heldout): 0.8786
+Accuracy (test): 0.8808

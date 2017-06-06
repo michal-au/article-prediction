@@ -1,0 +1,10 @@
+,parameters,mean_validation_score,cv_validation_scores
+0,"{'colsample_bytree': 0.8, 'subsample': 0.8}",0.88784,[ 0.8881  0.8884  0.8906  0.8866  0.8855]
+1,"{'colsample_bytree': 0.8, 'subsample': 0.9}",0.88822,[ 0.8859  0.8904  0.8897  0.8874  0.8877]
+2,"{'colsample_bytree': 0.8, 'subsample': 1.0}",0.8884,[ 0.886   0.8915  0.8907  0.8871  0.8867]
+3,"{'colsample_bytree': 0.9, 'subsample': 0.8}",0.88722,[ 0.8868  0.8886  0.8901  0.8856  0.885 ]
+4,"{'colsample_bytree': 0.9, 'subsample': 0.9}",0.88836,[ 0.8873  0.89    0.8904  0.8872  0.8869]
+5,"{'colsample_bytree': 0.9, 'subsample': 1.0}",0.88776,[ 0.8856  0.8888  0.8912  0.8851  0.8881]
+6,"{'colsample_bytree': 1.0, 'subsample': 0.8}",0.88676,[ 0.884   0.8885  0.8886  0.8871  0.8856]
+7,"{'colsample_bytree': 1.0, 'subsample': 0.9}",0.88934,[ 0.8882  0.8923  0.8909  0.8892  0.8861]
+8,"{'colsample_bytree': 1.0, 'subsample': 1.0}",0.88826,[ 0.8859  0.8905  0.8909  0.8878  0.8862]

@@ -1,0 +1,78 @@
+[paths]
+
+home: /home/michal
+project: $(home)/diplomka
+
+data: data
+dataOrig: %(data)s/orig/PTB/parsed/mrg/wsj
+dataRaw: %(data)s/raw
+dataPOS: %(data)s/pos
+dataParsed: %(data)s/parsed
+dataParsedOrig: %(data)s/parsed_orig
+dataFeatures: %(data)s/features
+
+dataFeaturesPennTrain: %(dataFeatures)s/penn/train.pkl
+dataFeaturesPennHeldout: %(dataFeatures)s/penn/heldout.pkl
+dataFeaturesPennTest: %(dataFeatures)s/penn/test.pkl
+dataFeaturesPennPostprocessed: %(dataFeatures)s/penn/postprocessed
+dataFeaturesPennPostprocessed3: %(dataFeatures)s/penn/postprocessed-3cutoff
+dataFeaturesPennPostprocessed0: %(dataFeatures)s/penn/postprocessed-0cutoff
+dataFeaturesPennPostprocessedTMP: %(dataFeatures)s/penn/postprocessed-DELETEME
+
+dataFeaturesBncLast: %(dataFeatures)s/bnc-last
+
+dataCorrector: %(data)s/corrector
+
+dataFeaturesSparseBnc: %(dataFeatures)s/sparse-bnc
+dataCountability: %(data)s/countability
+dataEmbeddingsGoogle: %(data)s/embeddings/GoogleNews-vectors-negative300.bin
+dataEmbeddingsIndicies: %(data)s/embeddings/indicies
+
+dataRnnlmRaw: %(data)s/rnnlm/raw
+
+dataBenchmark: %(data)s/1-billion-word-language-modeling-benchmark-r13output
+dataBenchmarkTrain: %(dataBenchmark)s/training-monolingual.tokenized.shuffled
+dataBenchmarkHeldout: %(dataBenchmark)s/heldout-monolingual.tokenized.shuffled
+
+dataWiki: %(data)s/wiki
+dataWikiRawText: %(dataWiki)s/raw_text
+dataWikiParsed: %(dataWiki)s/parsed
+
+dataNgrams: %(data)s/ngrams
+dataNgramsPartial: %(dataNgrams)s/partial
+
+dataBncOrig: %(data)s/bnc/2554/download/Texts
+dataBncRaw: %(data)s/bnc-raw
+dataBncRawTrain: %(data)s/bnc-raw-train
+dataBncRawHeldout: %(data)s/bnc-raw-heldout
+dataBncRawTest: %(data)s/bnc-raw-test
+dataBncTagged: %(data)s/bnc-tagged
+dataBncTagTrain: %(data)s/bnc-tag-train
+dataBncTagHeldout: %(data)s/bnc-tag-heldout
+dataBncTagTest: %(data)s/bnc-tag-test
+dataBncParsedTrain: %(data)s/bnc-parsed-train
+dataBncParsedHeldout: %(data)s/bnc-parsed-heldout
+dataBncParsedTest: %(data)s/bnc-parsed-test
+dataBncTestManual: %(data)s/bnc-test-manual
+
+trainDevelDir: train_devel
+testDevelDir: test_devel
+testDir: test
+
+code: code
+tagger: %(code)s/lib/tagger-mxpost
+parser: %(code)s/lib/parser-collins
+stanfordParser: %(code)s/lib/stanford-parser-full-2015-12-09
+log: %(code)s/logs
+logModelResults: %(log)s/experiments/model_results
+
+model: %(data)s/model
+modelLM: %(model)s/lang-model
+modelVectorizers: %(model)s/vectorizers
+modelVocabs: %(model)s/vocabs
+modelVocabsForLists: %(model)s/vocabs_for_lists
+logKennlmResults: %(log)s/experiments/model_results/kenlm
+modelBncVectorizers: %(model)s/bnc-last/vectorizers
+modelBncVocabs: %(model)s/bnc-last/vocabs
+
+figures: %(code)s/figs/output

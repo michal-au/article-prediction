@@ -1,0 +1,56 @@
+Best parameters set found on development set:
+()
+{'penalty': 'l2', 'loss': 'log'}
+()
+Grid scores on development set:
+()
+0.788 (+/-0.009) for {'penalty': 'l1', 'loss': 'modified_huber'}
+0.799 (+/-0.006) for {'penalty': 'l2', 'loss': 'modified_huber'}
+0.814 (+/-0.006) for {'penalty': 'l1', 'loss': 'log'}
+0.821 (+/-0.004) for {'penalty': 'l2', 'loss': 'log'}
+()
+Detailed classification report:
+()
+The model is trained on the full development set.
+The scores are computed on the full evaluation set.
+()
+             precision    recall  f1-score   support
+
+          A       0.69      0.40      0.51     79199
+        THE       0.67      0.62      0.64    197698
+       ZERO       0.87      0.94      0.91    623101
+
+avg / total       0.81      0.82      0.81    899998
+
+
+
+
+
+
+michal@sos-michal-aui:~/diplomka/code/experiments/bnc$ make bnc-tune-console-only
+Best parameters set found on development set:
+()
+{'penalty': 'l2', 'loss': 'modified_huber'}
+()
+Grid scores on development set:
+()
+0.810 (+/-0.003) for {'penalty': 'l1', 'loss': 'modified_huber'}
+0.839 (+/-0.004) for {'penalty': 'l2', 'loss': 'modified_huber'}
+0.817 (+/-0.003) for {'penalty': 'l1', 'loss': 'log'}
+0.829 (+/-0.003) for {'penalty': 'l2', 'loss': 'log'}
+()
+Detailed classification report:
+()
+The model is trained on the full development set.
+The scores are computed on the full evaluation set.
+()
+             precision    recall  f1-score   support
+
+          A       0.63      0.59      0.61     22717
+        THE       0.67      0.70      0.68     60341
+       ZERO       0.92      0.91      0.91    188327
+
+avg / total       0.84      0.84      0.84    271385
+
+()
+

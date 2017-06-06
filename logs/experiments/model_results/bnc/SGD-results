@@ -1,0 +1,12 @@
+SGD!!!
+
+TRAINING DATA:
+a = load_csr_matrix(os.path.join(SETTINGS.get('paths', 'dataFeaturesSparseBnc'), 'bnc-train-0-1000000.npz'))
+b = load_csr_matrix(os.path.join(SETTINGS.get('paths', 'dataFeaturesSparseBnc'), 'bnc-train-1000000-1999995.npz'))
+train_X = scipy.sparse.vstack([a, b])
+
+TEST DATA:
+bnc-test271385
+
+SCORE: 0.832761574884, (train: 0.833314583286)
+

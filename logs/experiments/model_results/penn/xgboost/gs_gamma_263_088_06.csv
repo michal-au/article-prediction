@@ -1,0 +1,2 @@
+,parameters,mean_validation_score,cv_validation_scores
+0,{'gamma': 0.6},0.9115999209390014,[ 0.90856915  0.91367973  0.91466798  0.90970599  0.91137677]

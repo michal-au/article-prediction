@@ -1,0 +1,2 @@
+accuracy,accuracy-train,model,call,features,train data,test data,time
+,,RandomForest,"RandomForestClassifier(n_estimators=50, n_jobs=10, verbose=1 )",ah ahf ahn anad ap apah apbh awah awan awbh awbn bhp bhps bof bpahal bpbhal bpof bpt br bwahal bwanal bwbhal bwbnal ccb dhfe ekg5ln,train,heldout,2016-12-21 21:52:58

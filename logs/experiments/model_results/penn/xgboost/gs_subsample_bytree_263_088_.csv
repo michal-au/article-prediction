@@ -1,0 +1,39 @@
+"0,""{'colsample_bytree': 0.8, 'subsample': 0.8}"",,[0.908569 0.913680 0.914668 0.909706 0.911377]",,,,,,,,
+"0,""{'colsample_bytree': 0.8, 'subsample': 0.9}"",,[0.908759 0.913110 0.915314 0.910219 0.910921]",,,,,,,,
+"0,""{'colsample_bytree': 0.9, 'subsample': 0.8}"",,[0.908493 0.913015 0.914592 0.909497 0.911111]",,,,[CV] .... colsample_bytree=0.8, subsample=0.8, score=0.908056 -46.7min,,
+"0,""{'colsample_bytree': 0.9, 'subsample': 0.9}"",,[0.909101 0.913433 0.914953 0.910276 0.911111]",,,,,,,,
+"0,""{'colsample_bytree': 0.9, 'subsample': 1}"",0.9098362525086663,[ 0.90824607  0.91077198  0.91263446  0.90818557  0.90934317]",,,,,,,,
+"0,""{'colsample_bytree': 1, 'subsample': 0.8}"",0.9115010946907499,[ 0.9087782   0.91288152  0.91462997  0.90993405  0.91128174]",,,,[CV] .... colsample_bytree=0.8, subsample=0.8, score=0.912748 -46.1min,,
+"0,""{'colsample_bytree': 1, 'subsample': 0.9}"",0.9115505078148757,[ 0.90927232  0.91301456  0.91491505  0.91006709  0.9104835 ]",,,,,,,,
+"0,""{'colsample_bytree': 1, 'subsample': 1}"",,[ 0.906840 0.909879 0.912520 0.908661 0.908621 ]",,,,,,,,
+,,,,[CV] .... colsample_bytree=0.8, subsample=0.8, score=0.914459 -52.3min,,
+,,,,,,,,
+,,,,,,,,
+[CV] .... colsample_bytree=0.8, subsample=0.8, score=0.908569 -46.1min,,,,[CV] .... colsample_bytree=0.8, subsample=0.8, score=0.909535 -47.0min
+[CV] .... colsample_bytree=0.8, subsample=0.8, score=0.913680 -46.0min,,,,,,
+[CV] .... colsample_bytree=0.8, subsample=0.8, score=0.914668 -46.3min,,,,,,
+[CV] .... colsample_bytree=0.8, subsample=0.8, score=0.909706 -46.4min,,,,[CV] .... colsample_bytree=0.8, subsample=0.8, score=0.910103 -47.0min
+[CV] .... colsample_bytree=0.8, subsample=0.8, score=0.911377 -46.0min,,,,,,
+[CV] .... colsample_bytree=0.8, subsample=0.9, score=0.908759 -44.3min,,,,[CV] .... colsample_bytree=0.8, subsample=0.9, score=0.908645 -48.7min
+[CV] .... colsample_bytree=0.8, subsample=0.9, score=0.913110 -44.5min,,,,,,
+[CV] .... colsample_bytree=0.8, subsample=0.9, score=0.915314 -44.6min,,,,,,
+[CV] .... colsample_bytree=0.8, subsample=0.9, score=0.910219 -44.4min,,,,[CV] .... colsample_bytree=0.8, subsample=0.9, score=0.912996 -46.1min
+[CV] .... colsample_bytree=0.8, subsample=0.9, score=0.910921 -44.4min,,,,,,
+[CV] .... colsample_bytree=0.8, subsample=1.0, score=0.907847 -41.9min,,,,,,
+[CV] .... colsample_bytree=0.8, subsample=1.0, score=0.911931 -41.9min,,,,[CV] .... colsample_bytree=0.8, subsample=0.9, score=0.914554 -44.5min
+[CV] .... colsample_bytree=0.9, subsample=0.9, score=0.909101 -48.6min,,,,,,
+[CV] .... colsample_bytree=0.9, subsample=0.9, score=0.913433 -48.5min,,,,,,
+[CV] .... colsample_bytree=0.9, subsample=0.9, score=0.914953 -51.3min,,,,[CV] .... colsample_bytree=0.8, subsample=0.9, score=0.909744 -44.6min
+[CV] .... colsample_bytree=0.9, subsample=0.9, score=0.910276 -71.1min,,,,,,
+[CV] .... colsample_bytree=0.9, subsample=0.9, score=0.911111 -89.2min,,,,,,
+[CV] ... colsample_bytree=0.9, subsample=0.8, score=0.908493 -103.2min,,,,[CV] .... colsample_bytree=0.8, subsample=0.9, score=0.910807 -44.3min
+[CV] ... colsample_bytree=0.9, subsample=0.8, score=0.913015 -106.1min,,,,,,
+[CV] ... colsample_bytree=0.9, subsample=0.8, score=0.914592 -110.1min,,,,[CV] .... colsample_bytree=0.8, subsample=1.0, score=0.907904 -41.8min
+[CV] ... colsample_bytree=0.9, subsample=0.8, score=0.909497 -116.5min,,,,,,
+[CV] ... colsample_bytree=0.9, subsample=0.8, score=0.911111 -104.3min,,,,[CV] .... colsample_bytree=0.8, subsample=1.0, score=0.911057 -41.7min
+,,,,,,,,
+"[CV] ....... colsample_bytree=1, subsample=1, score=0.906840 -131.5min",,,,[CV] .... colsample_bytree=0.8, subsample=1.0, score=0.912007 -41.9min,,
+"[CV] ....... colsample_bytree=1, subsample=1, score=0.909879 -133.1min",,,,,,,,
+"[CV] ....... colsample_bytree=1, subsample=1, score=0.912520 -114.4min",,,,[CV] .... colsample_bytree=0.8, subsample=1.0, score=0.908357 -41.9min,,
+"[CV] ....... colsample_bytree=1, subsample=1, score=0.908661 -110.8min",,,,,,,,
+"[CV] ....... colsample_bytree=1, subsample=1, score=0.908621 -133.0min",,,,[CV] .... colsample_bytree=0.8, subsample=1.0, score=0.908222 -41.7min,,

@@ -1,0 +1,195 @@
+Best parameters set found on development set:
+()
+{'penalty': 'l2', 'loss': 'log'}
+()
+Grid scores on development set:
+()
+0.788 (+/-0.009) for {'penalty': 'l1', 'loss': 'modified_huber'}
+0.799 (+/-0.006) for {'penalty': 'l2', 'loss': 'modified_huber'}
+0.814 (+/-0.006) for {'penalty': 'l1', 'loss': 'log'}
+0.821 (+/-0.004) for {'penalty': 'l2', 'loss': 'log'}
+()
+Detailed classification report:
+()
+The model is trained on the full development set.
+The scores are computed on the full evaluation set.
+()
+             precision    recall  f1-score   support
+
+          A       0.69      0.40      0.51     79199
+        THE       0.67      0.62      0.64    197698
+       ZERO       0.87      0.94      0.91    623101
+
+avg / total       0.81      0.82      0.81    899998
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Best parameters set found on development set:
+()
+{'penalty': 'elasticnet', 'l1_ratio': 0, 'loss': 'log'}
+()
+Grid scores on development set:
+()
+0.799 (+/-0.006) for {'penalty': 'elasticnet', 'l1_ratio': 0, 'loss': 'modified_huber'}
+0.806 (+/-0.005) for {'penalty': 'elasticnet', 'l1_ratio': 0.2, 'loss': 'modified_huber'}
+0.805 (+/-0.006) for {'penalty': 'elasticnet', 'l1_ratio': 0.4, 'loss': 'modified_huber'}
+0.803 (+/-0.008) for {'penalty': 'elasticnet', 'l1_ratio': 0.6, 'loss': 'modified_huber'}
+0.797 (+/-0.006) for {'penalty': 'elasticnet', 'l1_ratio': 0.8, 'loss': 'modified_huber'}
+0.788 (+/-0.009) for {'penalty': 'elasticnet', 'l1_ratio': 1, 'loss': 'modified_huber'}
+0.821 (+/-0.004) for {'penalty': 'elasticnet', 'l1_ratio': 0, 'loss': 'log'}
+0.820 (+/-0.006) for {'penalty': 'elasticnet', 'l1_ratio': 0.2, 'loss': 'log'}
+0.817 (+/-0.006) for {'penalty': 'elasticnet', 'l1_ratio': 0.4, 'loss': 'log'}
+0.816 (+/-0.006) for {'penalty': 'elasticnet', 'l1_ratio': 0.6, 'loss': 'log'}
+0.816 (+/-0.005) for {'penalty': 'elasticnet', 'l1_ratio': 0.8, 'loss': 'log'}
+0.814 (+/-0.006) for {'penalty': 'elasticnet', 'l1_ratio': 1, 'loss': 'log'}
+()
+Detailed classification report:
+()
+The model is trained on the full development set.
+The scores are computed on the full evaluation set.
+()
+             precision    recall  f1-score   support
+
+          A       0.69      0.40      0.51     79199
+        THE       0.67      0.62      0.64    197698
+       ZERO       0.87      0.94      0.91    623101
+
+avg / total       0.81      0.82      0.81    899998
+
+()
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Best parameters set found on development set:
+()
+{'penalty': 'elasticnet', 'l1_ratio': 0, 'n_iter': 15, 'loss': 'log'}
+()
+Grid scores on development set:
+()
+0.767 (+/-0.018) for {'penalty': 'elasticnet', 'l1_ratio': 0, 'n_iter': 1, 'loss': 'modified_huber'}
+0.799 (+/-0.006) for {'penalty': 'elasticnet', 'l1_ratio': 0, 'n_iter': 5, 'loss': 'modified_huber'}
+0.814 (+/-0.003) for {'penalty': 'elasticnet', 'l1_ratio': 0, 'n_iter': 10, 'loss': 'modified_huber'}
+0.818 (+/-0.003) for {'penalty': 'elasticnet', 'l1_ratio': 0, 'n_iter': 15, 'loss': 'modified_huber'}
+0.769 (+/-0.040) for {'penalty': 'elasticnet', 'l1_ratio': 0.2, 'n_iter': 1, 'loss': 'modified_huber'}
+0.806 (+/-0.005) for {'penalty': 'elasticnet', 'l1_ratio': 0.2, 'n_iter': 5, 'loss': 'modified_huber'}
+0.818 (+/-0.004) for {'penalty': 'elasticnet', 'l1_ratio': 0.2, 'n_iter': 10, 'loss': 'modified_huber'}
+0.820 (+/-0.003) for {'penalty': 'elasticnet', 'l1_ratio': 0.2, 'n_iter': 15, 'loss': 'modified_huber'}
+0.776 (+/-0.021) for {'penalty': 'elasticnet', 'l1_ratio': 0.4, 'n_iter': 1, 'loss': 'modified_huber'}
+0.805 (+/-0.006) for {'penalty': 'elasticnet', 'l1_ratio': 0.4, 'n_iter': 5, 'loss': 'modified_huber'}
+0.817 (+/-0.002) for {'penalty': 'elasticnet', 'l1_ratio': 0.4, 'n_iter': 10, 'loss': 'modified_huber'}
+0.819 (+/-0.004) for {'penalty': 'elasticnet', 'l1_ratio': 0.4, 'n_iter': 15, 'loss': 'modified_huber'}
+0.784 (+/-0.011) for {'penalty': 'elasticnet', 'l1_ratio': 0.6, 'n_iter': 1, 'loss': 'modified_huber'}
+0.803 (+/-0.008) for {'penalty': 'elasticnet', 'l1_ratio': 0.6, 'n_iter': 5, 'loss': 'modified_huber'}
+0.817 (+/-0.003) for {'penalty': 'elasticnet', 'l1_ratio': 0.6, 'n_iter': 10, 'loss': 'modified_huber'}
+0.817 (+/-0.005) for {'penalty': 'elasticnet', 'l1_ratio': 0.6, 'n_iter': 15, 'loss': 'modified_huber'}
+0.784 (+/-0.009) for {'penalty': 'elasticnet', 'l1_ratio': 0.8, 'n_iter': 1, 'loss': 'modified_huber'}
+0.797 (+/-0.006) for {'penalty': 'elasticnet', 'l1_ratio': 0.8, 'n_iter': 5, 'loss': 'modified_huber'}
+0.809 (+/-0.004) for {'penalty': 'elasticnet', 'l1_ratio': 0.8, 'n_iter': 10, 'loss': 'modified_huber'}
+0.813 (+/-0.006) for {'penalty': 'elasticnet', 'l1_ratio': 0.8, 'n_iter': 15, 'loss': 'modified_huber'}
+0.782 (+/-0.010) for {'penalty': 'elasticnet', 'l1_ratio': 1, 'n_iter': 1, 'loss': 'modified_huber'}
+0.788 (+/-0.009) for {'penalty': 'elasticnet', 'l1_ratio': 1, 'n_iter': 5, 'loss': 'modified_huber'}
+0.788 (+/-0.004) for {'penalty': 'elasticnet', 'l1_ratio': 1, 'n_iter': 10, 'loss': 'modified_huber'}
+0.787 (+/-0.011) for {'penalty': 'elasticnet', 'l1_ratio': 1, 'n_iter': 15, 'loss': 'modified_huber'}
+0.800 (+/-0.007) for {'penalty': 'elasticnet', 'l1_ratio': 0, 'n_iter': 1, 'loss': 'log'}
+0.821 (+/-0.004) for {'penalty': 'elasticnet', 'l1_ratio': 0, 'n_iter': 5, 'loss': 'log'}
+0.824 (+/-0.004) for {'penalty': 'elasticnet', 'l1_ratio': 0, 'n_iter': 10, 'loss': 'log'}
+0.825 (+/-0.005) for {'penalty': 'elasticnet', 'l1_ratio': 0, 'n_iter': 15, 'loss': 'log'}
+0.805 (+/-0.009) for {'penalty': 'elasticnet', 'l1_ratio': 0.2, 'n_iter': 1, 'loss': 'log'}
+0.820 (+/-0.006) for {'penalty': 'elasticnet', 'l1_ratio': 0.2, 'n_iter': 5, 'loss': 'log'}
+0.820 (+/-0.005) for {'penalty': 'elasticnet', 'l1_ratio': 0.2, 'n_iter': 10, 'loss': 'log'}
+0.821 (+/-0.007) for {'penalty': 'elasticnet', 'l1_ratio': 0.2, 'n_iter': 15, 'loss': 'log'}
+0.805 (+/-0.008) for {'penalty': 'elasticnet', 'l1_ratio': 0.4, 'n_iter': 1, 'loss': 'log'}
+0.817 (+/-0.006) for {'penalty': 'elasticnet', 'l1_ratio': 0.4, 'n_iter': 5, 'loss': 'log'}
+0.818 (+/-0.006) for {'penalty': 'elasticnet', 'l1_ratio': 0.4, 'n_iter': 10, 'loss': 'log'}
+0.819 (+/-0.006) for {'penalty': 'elasticnet', 'l1_ratio': 0.4, 'n_iter': 15, 'loss': 'log'}
+0.805 (+/-0.006) for {'penalty': 'elasticnet', 'l1_ratio': 0.6, 'n_iter': 1, 'loss': 'log'}
+0.816 (+/-0.006) for {'penalty': 'elasticnet', 'l1_ratio': 0.6, 'n_iter': 5, 'loss': 'log'}
+0.818 (+/-0.006) for {'penalty': 'elasticnet', 'l1_ratio': 0.6, 'n_iter': 10, 'loss': 'log'}
+0.818 (+/-0.007) for {'penalty': 'elasticnet', 'l1_ratio': 0.6, 'n_iter': 15, 'loss': 'log'}
+0.804 (+/-0.007) for {'penalty': 'elasticnet', 'l1_ratio': 0.8, 'n_iter': 1, 'loss': 'log'}
+0.816 (+/-0.005) for {'penalty': 'elasticnet', 'l1_ratio': 0.8, 'n_iter': 5, 'loss': 'log'}
+0.817 (+/-0.005) for {'penalty': 'elasticnet', 'l1_ratio': 0.8, 'n_iter': 10, 'loss': 'log'}
+0.818 (+/-0.007) for {'penalty': 'elasticnet', 'l1_ratio': 0.8, 'n_iter': 15, 'loss': 'log'}
+0.796 (+/-0.009) for {'penalty': 'elasticnet', 'l1_ratio': 1, 'n_iter': 1, 'loss': 'log'}
+0.814 (+/-0.006) for {'penalty': 'elasticnet', 'l1_ratio': 1, 'n_iter': 5, 'loss': 'log'}
+0.816 (+/-0.007) for {'penalty': 'elasticnet', 'l1_ratio': 1, 'n_iter': 10, 'loss': 'log'}
+0.817 (+/-0.007) for {'penalty': 'elasticnet', 'l1_ratio': 1, 'n_iter': 15, 'loss': 'log'}
+()
+Detailed classification report:
+()
+The model is trained on the full development set.
+The scores are computed on the full evaluation set.
+()
+             precision    recall  f1-score   support
+
+          A       0.63      0.50      0.56     79199
+        THE       0.68      0.62      0.65    197698
+       ZERO       0.89      0.93      0.91    623101
+
+avg / total       0.82      0.83      0.82    899998
+
+()
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Best parameters set found on development set:
+()
+{'penalty': 'l2', 'alpha': 0.0001, 'n_iter': 15, 'loss': 'log'}
+()
+Grid scores on development set:
+()
+0.799 (+/-0.006) for {'penalty': 'l2', 'alpha': 1e-06, 'n_iter': 10, 'loss': 'log'}
+0.799 (+/-0.009) for {'penalty': 'l2', 'alpha': 1e-06, 'n_iter': 15, 'loss': 'log'}
+0.799 (+/-0.012) for {'penalty': 'l2', 'alpha': 1e-06, 'n_iter': 20, 'loss': 'log'}
+0.817 (+/-0.003) for {'penalty': 'l2', 'alpha': 1e-05, 'n_iter': 10, 'loss': 'log'}
+0.820 (+/-0.004) for {'penalty': 'l2', 'alpha': 1e-05, 'n_iter': 15, 'loss': 'log'}
+0.822 (+/-0.006) for {'penalty': 'l2', 'alpha': 1e-05, 'n_iter': 20, 'loss': 'log'}
+0.824 (+/-0.004) for {'penalty': 'l2', 'alpha': 0.0001, 'n_iter': 10, 'loss': 'log'}
+0.825 (+/-0.005) for {'penalty': 'l2', 'alpha': 0.0001, 'n_iter': 15, 'loss': 'log'} <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+0.824 (+/-0.006) for {'penalty': 'l2', 'alpha': 0.0001, 'n_iter': 20, 'loss': 'log'}
+0.799 (+/-0.004) for {'penalty': 'l2', 'alpha': 0.001, 'n_iter': 10, 'loss': 'log'}
+0.801 (+/-0.006) for {'penalty': 'l2', 'alpha': 0.001, 'n_iter': 15, 'loss': 'log'}
+0.801 (+/-0.006) for {'penalty': 'l2', 'alpha': 0.001, 'n_iter': 20, 'loss': 'log'}
+()
+Detailed classification report:
+()
+The model is trained on the full development set.
+The scores are computed on the full evaluation set.
+()
+             precision    recall  f1-score   support
+
+          A       0.63      0.50      0.56     79199
+        THE       0.68      0.62      0.65    197698
+       ZERO       0.89      0.93      0.91    623101
+
+avg / total       0.82      0.83      0.82    899998
+
+()
+
+:::::::::::::ON THE TEST SET::::::::::
+michal@sos-michal-aui:~/diplomka/code/experiments/bnc$ make bnc-tune-console-only
+Best parameters set found on development set:
+()
+{'penalty': 'l2', 'loss': 'modified_huber'}
+()
+Grid scores on development set:
+()
+0.810 (+/-0.003) for {'penalty': 'l1', 'loss': 'modified_huber'}
+0.839 (+/-0.004) for {'penalty': 'l2', 'loss': 'modified_huber'}
+0.817 (+/-0.003) for {'penalty': 'l1', 'loss': 'log'}
+0.829 (+/-0.003) for {'penalty': 'l2', 'loss': 'log'}
+()
+Detailed classification report:
+()
+The model is trained on the full development set.
+The scores are computed on the full evaluation set.
+()
+             precision    recall  f1-score   support
+
+          A       0.63      0.59      0.61     22717
+        THE       0.67      0.70      0.68     60341
+       ZERO       0.92      0.91      0.91    188327
+
+avg / total       0.84      0.84      0.84    271385
+
+()
+
